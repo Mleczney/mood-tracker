@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let mood of moods">
+      <ion-label>
+        <h2>{{ mood.date }}</h2>
+        <p>Mood: {{ mood.mood }}</p>
+        <p *ngIf="mood.note">Note: {{ mood.note }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

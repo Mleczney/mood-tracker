@@ -1,0 +1,15 @@
+.scroll-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  display: block;
+}
+
+ion-segment {
+  display: inline-flex;
+  min-width: max-content;
+}
+
+ion-segment-button {
+  flex: 0 0 auto;
+}

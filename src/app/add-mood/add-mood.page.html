@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Mood</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding">
+<ion-item lines="none">
+  <div class="scroll-wrapper">
+    <ion-segment [(ngModel)]="selectedMood">
+      <ion-segment-button value="😃">😃</ion-segment-button>
+      <ion-segment-button value="😊">😊</ion-segment-button>
+      <ion-segment-button value="😐">😐</ion-segment-button>
+      <ion-segment-button value="🙁">🙁</ion-segment-button>
+      <ion-segment-button value="😢">😢</ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-item>
+
+
+
+  <ion-item>
+    <ion-label position="stacked">Note</ion-label>
+    <ion-textarea [(ngModel)]="note"></ion-textarea>
+  </ion-item>
+
+  <ion-button expand="block" (click)="save()">
+    Save
+  </ion-button>
+</ion-content>
